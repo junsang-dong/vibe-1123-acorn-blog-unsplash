@@ -1,0 +1,133 @@
+.content-display {
+  margin-bottom: 2rem;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.content-section {
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.content-section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.section-label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #667eea;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title-section {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  line-height: 1.3;
+  margin-top: 1rem;
+}
+
+.summary-section {
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.summary {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+  line-height: 1.6;
+}
+
+.content-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+  white-space: pre-wrap;
+}
+
+.hashtags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.hashtag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.hashtag:hover {
+  transform: scale(1.05);
+}
+
+.image-prompt-section {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: none;
+}
+
+.image-prompt {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .content-card {
+    padding: 1.5rem;
+  }
+
+  .blog-title {
+    font-size: 1.8rem;
+  }
+
+  .content-text,
+  .summary {
+    font-size: 1rem;
+  }
+
+  .section-label {
+    font-size: 1.1rem;
+  }
+}
+
